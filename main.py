@@ -5,13 +5,17 @@ from sorters.selections_sort import selections_sort
 from sorters.merge_sort import merge_sort
 from sorters.quick_sort import quick_sort
 
-from decorators import Decorators
+from decorators import Decorators, decorator
 
-a = list(input())
-a = list(map(lambda a: int(a),a))
+a = input().split()
 
-res = Decorators.decorator_reverse(bubble_sort)
-print(res(a))
+a = list(map(lambda x: int(x),a))
+
+@decorator
+def bs(x):
+    return bubble_sort(x)
+
+print(bs(a))
 
 
 

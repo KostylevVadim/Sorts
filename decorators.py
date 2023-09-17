@@ -15,5 +15,11 @@ class Decorators:
             a = func(a)
             return a[::-1]
         return wrapper
-    
+
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        a = func(*args, **kwargs)
+        tup = tuple(a)
+        return tup
+    return wrapper 
 
