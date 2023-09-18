@@ -7,16 +7,14 @@ from sorters.merge_sort import merge_sort
 import random
 from decorators import Decorators, decorator
 from list_defender import List_Defender
-import asyncio
-a = []
-b = []
+from oop import Counter, Pizza
 
-for i in range(1000000):
-    a.append(random.randint(0,1000000))
-    b.append(random.randint(0,1000000))
-x= bubble_sort(a)
-y = bubble_sort(b)
 
+x = Pizza(['kolbosa', 'tomato'])
+
+
+print(x)
+print(Pizza.create_default())
 
 
 
