@@ -24,3 +24,13 @@ class Pizza:
         st = ' '.join(self.__ingr)
         
         return 'Consists of: '+st
+    
+
+
+class Operation:
+    @staticmethod
+    def sum(a, b):
+        return a+b
+    @staticmethod
+    def dif(a,b):
+        return a-b

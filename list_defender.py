@@ -6,7 +6,7 @@ class List_Defender():
         self.__copy = self.__v[:]
         return self.__copy
     
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(self, exc_type):
         if exc_type is None:
             self.__v = self.__copy[:]
         else:
