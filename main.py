@@ -5,13 +5,19 @@ from sorters.selections_sort import selections_sort
 from sorters.merge_sort import merge_sort
 from sorters.quick_sort import quick_sort
 import random
-from decorators import Decorators, decorator
-from list_defender import List_Defender
-from oop import Counter, Pizza, Operation
-
-
-
-
-    
+import asyncio
+num = int(input())
+dict_translate = {
+    'I': 1,
+    'V': 5,
+    'X':10,
+    'L':50,
+    'C':100,
+    'D':500,
+    'M':1000
+}
+x = num
+x+=1
+c_t = 0
 
 

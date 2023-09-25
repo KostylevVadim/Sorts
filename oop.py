@@ -25,8 +25,9 @@ class Pizza:
         
         return 'Consists of: '+st
     
-
-
+import random
+import asyncio
+import time
 class Operation:
     @staticmethod
     def sum(a, b):
@@ -34,3 +35,6 @@ class Operation:
     @staticmethod
     def dif(a,b):
         return a-b
+    
+
+    
