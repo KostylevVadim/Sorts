@@ -28,7 +28,24 @@ class Pizza:
 class Connection:
     IP = ''
     DB_name = ''
+    __instance = None
     
+    
+    def __new__(cls, ip, db_name):
+        if cls.IP == '':
+            cls.__instance = super().__new__(cls)
+            cls.DB_name = db_name
+            cls.IP = ip
+            return cls.__instance
+
+        
+    
+    
+
+    def __str__(self) -> str:
+        return 'IP: '+ self.IP + ' DB '+ self.DB_name
+        
+
     
 
     
