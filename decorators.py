@@ -1,4 +1,5 @@
 class Decorators:
+    
     @staticmethod
     def decorator_to_tuple(func):
 
