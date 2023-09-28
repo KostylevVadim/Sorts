@@ -1,11 +1,12 @@
 class Decorators:
+
     @staticmethod
     def decorator_to_tuple(func):
 
         def wrapper(a):
         
             a = func(a)
-        #a = reversed(a)
+        
             tup = tuple(a)
             return tup
         return wrapper
@@ -23,3 +24,9 @@ def decorator(func):
         return tup
     return wrapper 
 
+def reverser(func):
+    def wrapper(*args, **kwargs):
+        
+        a = func(*args, **kwargs)
+        return a[::-1]
+    return wrapper
